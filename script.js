@@ -30,7 +30,6 @@ function normalizeSlideHeights() {
       var cards = $('.card', this);
       // reset the height
       items.css('min-height', 0);
-      cards.css('min-height',0);
       // set the height
       var maxHeight = Math.max.apply(null, 
           items.map(function(){
