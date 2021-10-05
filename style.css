@@ -2,6 +2,10 @@
         --space-grey:#313131;
         --space-grey-light:#6d6d6d;
     }
+
+    html{
+        max-width: 100%;
+    }
     
     section {
         padding: 20px;
@@ -34,10 +38,6 @@
     .navbar-nav{
         width:100%;
         justify-content: center;
-    }
-
-    .card{
-        min-height:600px;
     }
 
     #land {
