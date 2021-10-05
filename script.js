@@ -45,13 +45,13 @@ function defineViewportHeight(){
 }
 
 
-function ensureProperFit(){
+$(window).on('load resize', ()=>{
     normalizeSlideHeights();
     defineViewportHeight();
-}
+});
 
-$(window).on(
-    'load resize orientationchange', 
-    ensureProperFit);
+$(window).on('orientationchange',()=>{
+    normalizeSlideHeights();
+})
 
 
