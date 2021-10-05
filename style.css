@@ -6,9 +6,16 @@
     html{
         max-width: 100%;
     }
-    
+
+    body{
+        width:100%;
+    }
+
+    .prevent-overflow-x{
+        overflow-x: hidden;
+    }
     section {
-        padding: 20px;
+        /* padding: 20px; */
         text-align: center;
     }
     
@@ -32,9 +39,9 @@
         text-align: left;
     }
 
-    .col-md{
+    /* .col-md{
         padding:40px;
-    }
+    } */
 
     .navbar-nav{
         width:100%;
@@ -45,6 +52,7 @@
         display: flex;
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/land_background.png');
         height: 100vh;
+        width: 100%;
         color: white;
         padding-top: 100px;
         justify-content: center;
