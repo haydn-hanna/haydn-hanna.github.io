@@ -27,7 +27,6 @@ Typewriter.type(sheet);
 function normalizeSlideHeights() {
     $('.carousel').each(function(){
       var items = $('.carousel-item', this);
-      var cards = $('.card', this);
       // reset the height
       items.css('min-height', 0);
       // set the height
@@ -35,11 +34,6 @@ function normalizeSlideHeights() {
           items.map(function(){
               return $(this).outerHeight()}).get() );
       items.css('min-height', maxHeight + 'px');
-
-      var maxCardHeight = Math.max.apply(null, 
-        cards.map(function(){
-            return $(this).outerHeight()}).get() );
-    cards.css('min-height', maxCardHeight + 'px');
     })
     
 }
