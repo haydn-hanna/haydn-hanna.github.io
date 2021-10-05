@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Open Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href='style.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Haydn Hanna</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fade-in fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#educator">educator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aspiring_martian">aspiring martian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#js_fs_developer">js developer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <section id='land'>
+            <h1>
+                <span id="typer"><!--t, 300ms, 1s-->educator.<!--d, all, 300ms, 500ms--><!--t, 500ms, 500ms-->aspiring martian.<!--d, all, 500ms, 500ms--><!--t, 800ms, 500ms-->js full stack developer.<!--d, all, 800ms, 500ms--><!--t, 800ms, 500ms-->haydn.<span class="cursor"></span></span>
+            </h1>
+            <br>
+            <img src="images/land_photo.png" alt="" id="land_photo">
+            <div class='fade-in' id="social_media">
+                <a href="https://twitter.com/HannaHaydn" target='_blank' class="fa fa-twitter"></a>
+                <a href="https://linkedin.com/in/haydn-hanna" target='_blank' class="fa fa-linkedin"></a>
+                <a href="https://outschool.com/teachers/Haydn-Hanna?usid=xiItvQHv&signup=true&authTrigger=follow_teacher&follow=true&utm_campaign=share_leader_link" target='_blank'><img class="outschool" src="images/outschool_logo.png" alt="" ></a>
+            </div>
+        </section>
+        <section class="container-fluid" id='educator'>
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <hr>
+                    <h2>educator.</h2>
+                    <p>I am first and foremost an educator. I teach children about humanity's exciting future on Mars on Outschool! Check out some of the courses that I run!</p>
+                    <hr>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide col-md" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card">
+                            <img src="images/outschool_cards/introduction_to_mars.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Mars!</h5>
+                                <p class="card-text">A beginner course - for children who are just discovering the Red Planet.</p>
+                                <a href="https://outschool.com/classes/introduction-to-mars-K8dUeeHK?sectionUid=ef9279f1-0960-4dee-b6db-be2dc8cd79b9&usid=xiItvQHv&signup=true&utm_campaign=share_activity_link" class="btn btn-primary">View on Outschool</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/outschool_cards/build_a_city_on_mars.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Build a City on Mars!</h5>
+                                <p class="card-text">This class teaches students how to use TinkerCad to build a 3D model of a city on Mars!.</p>
+                                <a href="https://outschool.com/classes/build-a-city-on-mars-EavVJo5w?sectionUid=21dee021-70fe-402a-8e0b-9e7dfcbf0f36&usid=xiItvQHv&signup=true&utm_campaign=share_activity_link" class="btn btn-primary">View on Outschool</a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/outschool_cards/3d_printing_club.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">3D Printing Club!</h5>
+                                <p class="card-text">A fun club where students can develop their 3D printing chops and bring their creations to life!</p>
+                                <a href="https://outschool.com/classes/3d-printing-club-9ggJGSjj#usxiItvQHv" class="btn btn-primary">View on Outschool</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+            </div>
+        </section>
+        
+        <section id='aspiring_martian' class='container-fluid'>
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <hr>
+                    <h2>aspiring martian.</h2>
+                    <p>I'm obsessed with Mars. Humanity can't outlive the Earth - it's a species imperitive that we get out their among the stars. Mars is a great first step!</p>
+                    <hr>
+                </div>
+                <section class='sub_section col-md' id='mars_explorer'>
+                    <img id="mars_explorer_logo" src='images/mars_explorer_logo.png' alt="The logo for the Mars Explorer Program. The word Explorer is in bold type. The o in Explorer is replaced with a picture of Mars. Various graphics having to do with space float around the word.">
+                    <p>I believe that humanity's future is among the stars. I spend a lot of my time volunteering with the Mars Society of Canada as the lead designer of the Mars Explorer Program. The Mars Explorer Program is an open-source, accessible and enjoyable
+                        online learning platform designed to inspire students across Canada to explore Mars. The program is set to launch later this year. The program will begin as a collection of teacher resources that can be used in schools across Canada. Eventually, the program will expand beyond
+                        teacher resources to include student competitions, educational videos, online courses and after school virtual clubs.</p>
+                </section>
+            </div>
+            <div class="row align-itmes-center">
+                <section class="sub_section col-md">
+                    <h3 id="building_athens">Building Athens</h3>
+                    <h4>
+                        The first education system on Mars
+                    </h4> 
+                    <p>We don't get to pick the second generation of Martians, so an effective education system on Mars is vital to humanity's attempt to become interplanetary. Building Athens is an article series that explores the challenges and potential solutions to educating students on Mars. My first article is part of the Mars Society of Canada's Marslog.
+                        The article pays tribute to Athens, the center of education that led to the flourishing of a new civilization and explores the major challenges to building the first interplanetary education system. Hopefull Mars becomes a new center of education leading to the flourishing of yet
+                        another amazing civilization.</p>        
+                    </section>
+                    <div id="carouselExampleControls" class="carousel slide col-md" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img src="images/article_cards/part_1_card_img.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Part 1: Challenges to Building a Martian Education System</h5>
+                                        <p class="card-text">In this inaugural article, I explore the key challenges that need to be overcome in order to establish the first education system on Mars.</p>
+                                        <a href="https://www.marssociety.ca/2021/08/19/building-athens-part-1/" class="btn btn-primary">Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="images/article_cards/part_2_card_img.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Part 2: What's the purpose?</h5>
+                                        <p class="card-text">If Part 1 deals with the challenges, Part 2 begins the process of overcoming some of these challenges by going back to the very beginning and testing our fundamental assumptions about education. By the end, maybe we'll have
+                                            an answer to the question: What is the purpose of education on Mars?</p>
+                                        <a href="" class="btn btn-primary disabled">In development</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                  </div>
+            </div>
+                    
+        </section>
+        
+        <section id='js_fs_developer' class='container-fluid'>
+            <div class="row align-items-center">
+                <div class="col-md section_title">
+                    <hr>
+                    <h2>js full-stack developer</h2>
+                    <p>I'm also a self-taught Javascript full-stack developer. I'm looking to become a junior developer and would love to work under a mentor and as part of a team to take my abilities to the next level. Feel free to
+                        play a couple of the games I've created for my classes!</p>
+                    <hr>
+                </div>
+                <div id="js_portfolio_carousel" class="carousel slide col-md" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <div class="card">
+                            <img src="images/js_cards/random-mars-facts.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Mars Fact Generator</h5>
+                                <p class="card-text">A simple app that throws you a random fact about Mars! Can be used on the command line or just use the function in your program.</p>
+                                <p><b>Technologies:</b>Readline</p>
+                                <a href="https://github.com/haydn-hanna/generate-mars-facts" target="_blank" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="images/js_cards/habitat_on_mars.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Habitat on Mars</h5>
+                                    <p class="card-text">This quiz game requires students to answer questions in order to build sections of their habitat. This game would be played after spending a lesson learning about webdesign using different Martian habitat related websites. This
+                                        game is a little different! It allows open ended questions that require feedback from a teacher.To see the teacher dashboard, open a second game instance and type 'Teacher' where you would normally type your name.</p>
+                                    <p><b>Technologies:</b> Node.js, socket.io, Flexbox</p>
+                                    <a href="https://buildahabitat-lpuccdfqyq-uc.a.run.app" class="btn btn-primary">Play</a>
+                                    <a href="https://github.com/haydn-hanna/build-a-martian-habitat" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#js_portfolio_carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#js_portfolio_carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/vnphanquang/pq-typewriterjs/pq-typewriter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
