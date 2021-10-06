@@ -1,29 +1,7 @@
-const typer = document.getElementById('typer');
-let sheet = Typewriter.feed(typer);
-console.log(sheet);
-Typewriter.type(sheet);
-
-/* function normalizeCarousels(){
-    var carousels = document.getElementsByClassName('carousel')
-    
-    for(var i=0;i<carousels.length;i++){
-        var tallestHeight=0;
-        var currentCarousel = carousels[i];
-        var carouselItems = currentCarousel.getElementsByClassName('card');
-        
-        for(var j=0;j<carouselItems.length;j++){
-            var itemHeight = carouselItems[j].getBoundingClientRect().height
-            console.log(itemHeight);
-            if(itemHeight>tallestHeight)tallestHeight=itemHeight;
-            console.log(`The tallest element is ${tallestHeight}`)
-        }
-    console.log('Done checking this carousel')
-        for(var k=0;k<carouselItems.length;k++){
-            carouselItems[k].style.minHeight=`${tallestHeight}px`
-        }
-    }
-} */
-
+/**
+ * Normalizes the carousel inner item heights to prevent section resizes
+ *
+ */
 function normalizeSlideHeights() {
     $('.carousel').each(function(){
       var items = $('.carousel-item', this);
@@ -38,8 +16,27 @@ function normalizeSlideHeights() {
     
 }
 
+/**
+ * Launches the typer span
+ *
+ */
+function launchTyper(){
+    const typer = document.getElementById('typer');
+    let sheet = Typewriter.feed(typer);
+    console.log(sheet);
+    Typewriter.type(sheet);
+}
 
-$(window).on('load resize orientationchange', ()=>{
+function openMailApp(){
+    window.open('mailto:haydn.hanna@gmail.com')
+}
+
+$(window).on('load',()=>{
+    normalizeSlideHeights();
+    launchTyper();
+})
+
+$(window).on('resize orientationchange', ()=>{
     normalizeSlideHeights();
 });
 

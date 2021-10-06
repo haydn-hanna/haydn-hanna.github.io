@@ -45,9 +45,14 @@
         justify-content: center;
     }
 
+    .navbar{
+        background-color: rgb(0,22,25);
+    }
+
     #land {
         display: flex;
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/land_background.png');
+        background-size: cover;
         height: 100vh;
         width: 100%;
         color: white;
@@ -70,15 +75,16 @@
         z-index:2;
     }
 
+    
     #typer{
         z-index:3;
     }
     
     #mars_explorer_logo {
-       max-width: 100%;
-       margin-bottom:20px;
+        max-width: 100%;
+        margin-bottom:20px;
     }
-
+    
     .fade-in{
         animation: fadeIn linear 11s;
         -webkit-animation: fadeIn linear 11s;
@@ -86,53 +92,54 @@
         -o-animation: fadeIn linear 11s;
         -ms-animation: fadeIn linear 11s;
     }
-
+    
     @keyframes fadeIn {
         0%{opacity:0;}
         75% {opacity:0;}
         100% {opacity:1;}
     }
-
+    
     @-moz-keyframes fadeIn {
         0%{opacity:0;}
         75% {opacity:0;}
         100% {opacity:1;}
     }
-
+    
     /* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 55px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px;
-    border-radius: 50%;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  /* LinkedIn */
-  .fa-linkedin{
-      background:#027BB5;
-      color:white;
-  }
-  /*Outschool*/
-  .outschool{
-      height: 55px;
-      margin:5px;
-  }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 55px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px;
+        border-radius: 50%;
+    }
     
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    /* Twitter */
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    /* LinkedIn */
+    .fa-linkedin{
+        background:#027BB5;
+        color:white;
+    }
+    
+    /*Outschool*/
+    .outschool,.github{
+        height: 55px;
+        margin:5px;
+    }
+    
+
     /*Typerwriter effect provided by Quang Phan from JSFiddle*/
-    
     .cursor::before {
         content: "|";
         /* font-weight: bolder; */
