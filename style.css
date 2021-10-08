@@ -58,6 +58,7 @@
         color: white;
         padding-top: 100px;
         justify-content: center;
+        position:relative;
     }
 
     #land_photo{
