@@ -77,7 +77,10 @@
 
     
     #typer{
-        z-index:3;
+        opacity:0;
+    }
+    #typer_title{
+        z-index: 3;
     }
     
     #mars_explorer_logo {

@@ -25,6 +25,7 @@ function launchTyper(){
     let sheet = Typewriter.feed(typer);
     console.log(sheet);
     Typewriter.type(sheet);
+    typer.style.opacity = 1;
 }
 
 function openMailApp(){
